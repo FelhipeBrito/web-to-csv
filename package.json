@@ -1,0 +1,11 @@
+{
+  "name": "web-to-csv-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Extensão Chrome local-first para exportar tabelas HTML como CSV.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "validate": "node scripts/validate-package.js",
+    "package": "bash scripts/package-extension.sh"
+  }
+}

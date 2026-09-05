@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web to CSV</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand-mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <div>
+        <h1>Web to CSV</h1>
+        <p>Exporte tabelas da página</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="status" class="status" aria-live="polite">
+        <div class="spinner" aria-hidden="true"></div>
+        <p>Analisando a página…</p>
+      </section>
+
+      <section id="results" class="results" hidden>
+        <div class="results-heading">
+          <p id="summary" class="summary"></p>
+          <button id="refresh-button" class="icon-button" type="button" title="Analisar novamente" aria-label="Analisar novamente">
+            ↻
+          </button>
+        </div>
+        <div id="table-list" class="table-list"></div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="../utils/csv.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

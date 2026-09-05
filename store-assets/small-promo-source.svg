@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <defs>
+    <linearGradient id="promo" x1="24" y1="16" x2="412" y2="266" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3978F6"/>
+      <stop offset="1" stop-color="#124FC8"/>
+    </linearGradient>
+  </defs>
+  <rect width="440" height="280" fill="url(#promo)"/>
+  <circle cx="403" cy="31" r="88" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="32" cy="270" r="92" fill="#FFFFFF" opacity="0.06"/>
+  <g transform="translate(36 40)">
+    <rect width="88" height="88" rx="22" fill="#FFFFFF"/>
+    <path d="M29 22V66M58 22V66M14 37H74M14 52H74" stroke="#BFD2FF" stroke-width="5"/>
+    <path d="M44 58V78M34 70L44 80L54 70" fill="none" stroke="#2160DC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36" y="170" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="34" font-weight="700">Web to CSV</text>
+  <text x="36" y="201" fill="#DCE8FF" font-family="Arial, sans-serif" font-size="18">Tabelas da web para sua planilha</text>
+  <g transform="translate(36 226)">
+    <rect width="108" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.16"/>
+    <text x="54" y="20" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12" font-weight="700">LOCAL-FIRST</text>
+  </g>
+</svg>

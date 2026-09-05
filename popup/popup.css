@@ -1,0 +1,274 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f6f8fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 390px;
+  min-height: 190px;
+  max-height: 580px;
+  margin: 0;
+  background: #f6f8fc;
+}
+
+button {
+  font: inherit;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 18px 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #1456d8, #3978f6);
+}
+
+.app-header h1,
+.app-header p {
+  margin: 0;
+}
+
+.app-header h1 {
+  font-size: 19px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.app-header p {
+  margin-top: 3px;
+  color: #dce8ff;
+  font-size: 12px;
+}
+
+.brand-mark {
+  display: grid;
+  grid-template-columns: repeat(3, 6px);
+  gap: 3px;
+  width: 34px;
+  height: 34px;
+  padding: 7px 5px;
+  border: 1px solid rgb(255 255 255 / 32%);
+  border-radius: 9px;
+  background: rgb(255 255 255 / 14%);
+}
+
+.brand-mark span {
+  border-radius: 2px;
+  background: #fff;
+}
+
+main {
+  padding: 14px;
+}
+
+.status {
+  display: flex;
+  min-height: 92px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  color: #5b6475;
+  text-align: center;
+}
+
+.status p {
+  max-width: 315px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.status strong {
+  color: #24304a;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #dce5f8;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.retry-button {
+  margin-top: 4px;
+  padding: 8px 12px;
+  border: 1px solid #c8d5ef;
+  border-radius: 8px;
+  color: #1e55b4;
+  background: #fff;
+  cursor: pointer;
+}
+
+.results-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2px 10px;
+}
+
+.summary {
+  margin: 0;
+  color: #3c465c;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.icon-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d8dfed;
+  border-radius: 8px;
+  color: #40506c;
+  background: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.icon-button:hover,
+.retry-button:hover {
+  background: #edf3ff;
+}
+
+.table-list {
+  display: grid;
+  gap: 10px;
+}
+
+.table-card {
+  overflow: hidden;
+  border: 1px solid #dde3ee;
+  border-radius: 11px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgb(36 48 74 / 5%);
+}
+
+.table-card-header {
+  padding: 13px 13px 10px;
+}
+
+.table-card h2 {
+  overflow: hidden;
+  margin: 0;
+  color: #1f2a42;
+  font-size: 14px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-meta {
+  margin: 4px 0 0;
+  color: #687287;
+  font-size: 12px;
+}
+
+.card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 7px;
+  padding: 0 13px 13px;
+}
+
+.action-button {
+  min-height: 34px;
+  padding: 7px 6px;
+  border: 1px solid #d5ddec;
+  border-radius: 8px;
+  color: #35415a;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  border-color: #a9bde5;
+  background: #f4f7fd;
+}
+
+.action-button.primary {
+  border-color: #2563eb;
+  color: #fff;
+  background: #2563eb;
+}
+
+.action-button.primary:hover {
+  background: #1d52c8;
+}
+
+.action-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.preview {
+  overflow-x: auto;
+  border-top: 1px solid #e2e7f0;
+  background: #fbfcff;
+}
+
+.preview table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #33405a;
+  font-size: 11px;
+}
+
+.preview td {
+  min-width: 86px;
+  max-width: 180px;
+  padding: 7px 9px;
+  overflow: hidden;
+  border-right: 1px solid #e5eaf2;
+  border-bottom: 1px solid #e5eaf2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.preview tr:first-child td {
+  color: #26334e;
+  background: #edf3ff;
+  font-weight: 700;
+}
+
+.preview-note {
+  margin: 0;
+  padding: 7px 9px;
+  color: #778196;
+  font-size: 10px;
+}
+
+.toast {
+  position: fixed;
+  right: 14px;
+  bottom: 12px;
+  left: 14px;
+  z-index: 10;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #fff;
+  background: #172033;
+  box-shadow: 0 5px 18px rgb(23 32 51 / 24%);
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner { animation: none; }
+}

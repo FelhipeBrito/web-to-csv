@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Teste Web to CSV</title>
+    <style>
+      body { max-width: 900px; margin: 40px auto; font-family: system-ui, sans-serif; color: #182238; }
+      table { width: 100%; margin: 24px 0 40px; border-collapse: collapse; }
+      caption { margin-bottom: 8px; font-size: 20px; font-weight: 700; text-align: left; }
+      th, td { padding: 10px; border: 1px solid #b8c2d6; text-align: left; }
+      th { background: #eaf1ff; }
+    </style>
+  </head>
+  <body>
+    <h1>Página local de teste</h1>
+    <p>Use esta página para validar detecção, preview, cópia, UTF-8, vírgulas, aspas, quebras e células mescladas.</p>
+
+    <table>
+      <caption>Produtos em destaque</caption>
+      <thead>
+        <tr><th>Produto</th><th>Preço</th><th>Loja</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Mouse "Pro", sem fio</td><td>R$ 100,00</td><td>Loja São José</td></tr>
+        <tr><td>Teclado mecânico</td><td>R$ 249,90</td><td>Loja Ação</td></tr>
+        <tr><td>Monitor<br>24 polegadas</td><td>R$ 899,00</td><td></td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td colspan="2">Total de produtos</td><td>3</td></tr>
+      </tfoot>
+    </table>
+
+    <table aria-label="Estoque por categoria">
+      <tr><th rowspan="2">Categoria</th><th colspan="2">Quantidade</th></tr>
+      <tr><th>Disponível</th><th>Reservada</th></tr>
+      <tr><td>Periféricos</td><td>42</td><td>5</td></tr>
+    </table>
+  </body>
+</html>
